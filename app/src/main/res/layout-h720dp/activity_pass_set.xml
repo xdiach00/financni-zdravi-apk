@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PassSetActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@color/back_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textLogo2"
+            android:layout_width="238dp"
+            android:layout_height="47dp"
+            android:fontFamily="@font/opensans"
+            android:text="Finanční zdraví"
+            android:textColor="#2e3192"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="119dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/digilogo_ten_2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textSetPassLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/sourcesanspro"
+            android:text="Nastavení hesla"
+            android:textColor="#2e3192"
+            android:textSize="33dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/imageLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:errorTextColor="#FFE13023"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSetPassLogo">
+
+            <TextView
+                android:id="@+id/showUserEmail"
+                android:layout_width="351dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_no_edit"
+                android:ems="10"
+                android:fontFamily="@font/sourcesanspro"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="25dp"
+                android:text="user_email"
+                android:textColor="#2E3192"
+                android:textColorHint="@color/blue_dark"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textSetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Heslo"
+            android:textColorHint="@color/blue_dark"
+            android:theme="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+            app:errorEnabled="false"
+            app:errorTextColor="#FFE13023"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textUserEmail"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/blue_dark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPass"
+                android:layout_width="351sp"
+                android:layout_height="52sp"
+                android:layout_gravity="center"
+                android:background="@drawable/hint_shape_edit_text"
+                android:drawableStart="@drawable/ic_action_pass_set"
+                android:drawableLeft="@drawable/ic_action_pass_set"
+                android:fontFamily="@font/sourcesanspro"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:paddingLeft="2sp"
+                android:paddingRight="20sp"
+                android:textColor="@color/blue_dark"
+                android:textColorHint="@color/blue_dark"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textAcceptPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Heslo znovu"
+            android:textColorHint="@color/blue_dark"
+            android:theme="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+            app:errorEnabled="false"
+            app:errorTextColor="#FFE13023"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSetPass"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/blue_dark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPassConfirm"
+                android:layout_width="351sp"
+                android:layout_height="52sp"
+                android:layout_gravity="center"
+                android:background="@drawable/hint_shape_edit_text"
+                android:drawableStart="@drawable/ic_action_pass_set"
+                android:drawableLeft="@drawable/ic_action_pass_set"
+                android:textSize="18dp"
+                android:fontFamily="@font/sourcesanspro"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:textColor="@color/blue_dark"
+                android:textColorHint="@color/blue_dark" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/sourcesanspro"
+            android:text="@string/user_agree"
+            android:textColorLink="@color/blue_dark"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_dark"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.179"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAcceptPass" />
+
+        <Switch
+            android:id="@+id/switchCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorLink="#FFFFFF"
+            android:theme="@style/SwitchTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.653"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textAcceptPass" />
+
+        <Button
+            android:id="@+id/buttonEndRegister"
+            android:layout_width="351dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="104dp"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/opensans"
+            android:text="Dokončit registraci"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#2E3192"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sourcesanspro"
+            android:text="Vrátit se zpět"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_dark"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEndRegister" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/opensans"
+        android:text="@string/title_settings"
+        android:textColor="@color/blue_dark"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/showUserEmail"
+            android:layout_width="351dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_no_edit"
+            android:ems="10"
+            android:fontFamily="@font/sourcesanspro"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="25dp"
+            android:text="user_email"
+            android:textColor="#2E3192"
+            android:textColorHint="@color/blue_dark"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textChangeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUserEmail"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        android:hint="Jméno"
+        android:textColorHint="@color/blue_dark"
+        android:theme="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+        app:errorEnabled="false"
+        app:hintEnabled="true"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputSettingsName"
+            android:layout_width="351dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hint_shape_edit_text"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:ems="10"
+            android:fontFamily="@font/sourcesanspro"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textSize="18dp"
+            android:paddingRight="25dp"
+            android:textColor="@color/blue_dark"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textChangeSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_marginTop="0dp"
+        android:theme="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+        android:textColor="@color/blue_dark"
+        android:hint="Příjmení"
+        android:textColorHint="@color/blue_dark"
+        android:layout_below="@id/textChangeName"
+        app:errorEnabled="false"
+        app:hintEnabled="true"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputSettingsSecondName"
+            android:layout_width="351dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hint_shape_edit_text"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:ems="10"
+            android:fontFamily="@font/sourcesanspro"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textSize="18dp"
+            android:paddingRight="25dp"
+            android:textColor="@color/blue_dark"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/togglePersonChange"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@+id/textChangeSurname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        app:on="false"
+        app:textOff="ZAMĚSTNANEC"
+        app:textOn="OSVČ"
+        app:colorBorder="@color/blue_dark"
+        app:colorOff="@color/white"
+        app:colorOn="@color/blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textChangeSurname"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <Button
+        android:id="@+id/buttonSaveChanges"
+        android:layout_width="351dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/togglePersonChange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/opensans"
+        android:text="ULOŽIT ZMĚNY"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blue_dark" />
+
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="351dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonSaveChanges"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_style"
+        android:backgroundTint="@color/blue_dark"
+        android:fontFamily="@font/opensans"
+        android:text="ZMĚNIT HESLO"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonDeleteAccount"
+        android:layout_width="351dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/textSouhlas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_style"
+        android:backgroundTint="#CA291D"
+        android:fontFamily="@font/opensans"
+        android:text="SMAZAT ÚČET"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textSouhlas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/sourcesanspro"
+        android:gravity="center_horizontal"
+        android:text="   "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+
+</RelativeLayout>

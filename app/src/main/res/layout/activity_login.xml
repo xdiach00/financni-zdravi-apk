@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#29ABE2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="258dp"
+            android:layout_height="244dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.765"
+            app:srcCompat="@drawable/digilogo_ten_2" />
+
+        <TextView
+            android:id="@+id/textLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans"
+            android:text="Finanční zdraví"
+            android:textColor="#2e3192"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/imageLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLoginEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/blue_dark"
+            android:theme="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+            app:errorEnabled="false"
+            app:errorTextColor="#FFE13023"
+            app:hintEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.013">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLoginEmail"
+                android:layout_width="351dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/hint_shape_edit_text"
+                android:drawableLeft="@drawable/ic_action_mail"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:paddingRight="25dp"
+                android:textColor="#2E3192"
+                android:textColorHint="#2E3192"
+                android:textSize="18dp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLoginPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="Heslo"
+            android:textColorHint="@color/blue_dark"
+            android:theme="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+            app:errorEnabled="false"
+            app:errorTextColor="#FFE13023"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLoginEmail"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/blue_dark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLoginPass"
+                android:layout_width="351dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/hint_shape_edit_text"
+                android:drawableStart="@drawable/ic_action_password"
+                android:drawableLeft="@drawable/ic_action_password"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:paddingRight="25dp"
+                android:textColor="#2E3192"
+                android:textColorHint="#2E3192"
+                android:textSize="18dp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textResetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/sourcesanspro"
+            android:text="Zapomenuté heslo?"
+            android:textAllCaps="false"
+            android:textColor="#2E3192"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textResendEmail" />
+
+        <TextView
+            android:id="@+id/textResendEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/sourcesanspro"
+            android:text="Zaslat znovu aktivační mail"
+            android:textAllCaps="false"
+            android:textColor="#2E3192"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="351dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/opensans"
+            android:text="Přihlásit"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLoginPassword"
+            app:layout_constraintVertical_bias="0.063" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sourcesanspro"
+            android:text="Nemáte účet?"
+            android:textColor="@color/blue_dark"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.31" />
+
+        <TextView
+            android:id="@+id/textRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sourcesanspro"
+            android:text="ZAREGISTRUJTE SE"
+            android:textColor="@color/blue_dark"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.31" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

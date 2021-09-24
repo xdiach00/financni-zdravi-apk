@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_menu_dashboard"
+        android:title="@string/title_dashboard"/>
+
+    <item
+        android:id="@+id/navigation_enter_data"
+        android:icon="@drawable/ic_menu_enter_data"
+        android:title="@string/title_enter_data" />
+
+    <item
+        android:id="@+id/navigation_connect_account"
+        android:icon="@drawable/ic_menu_add_account"
+        android:title="@string/title_connect_account" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_menu_settings"
+        android:title="@string/title_settings"/>
+
+</menu>

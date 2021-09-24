@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Finanční zdraví</string>
+    <string name="title_activity_dash_board">MainActivity</string>
+    <string name="title_dashboard">DASHBOARD</string>
+    <string name="title_enter_data">ZADÁNÍ DAT</string>
+    <string name="title_connect_account">BANKA</string>
+    <string name="title_settings">NASTAVENÍ</string>
+    <string name="user_agree">Souhlasím se zpracováním <a href="https://www.financni-zdravi.cz/podminky">osobních údajů</a></string>
+</resources>

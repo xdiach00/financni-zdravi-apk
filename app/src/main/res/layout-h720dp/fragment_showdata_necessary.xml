@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/showDataNecessary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/sourcesanspro"
+            android:text="NEZBYTNÉ VÝDAJE"
+            android:textColor="@color/blue_dark"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:ems="8"
+                android:fontFamily="@font/sourcesanspro"
+                android:paddingTop="3dp"
+                android:text="Bydlení"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/showHousing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:drawableRight="@drawable/ic_crown"
+                android:ems="5"
+                android:fontFamily="@font/sourcesanspro"
+                android:gravity="right"
+                android:hint="0"
+                android:paddingTop="3dp"
+                android:textColor="@color/blue_dark"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:ems="8"
+                android:fontFamily="@font/sourcesanspro"
+                android:paddingTop="3dp"
+                android:text="Služby"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/showServices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:drawableRight="@drawable/ic_crown"
+                android:ems="5"
+                android:fontFamily="@font/sourcesanspro"
+                android:gravity="right"
+                android:hint="0"
+                android:paddingTop="3dp"
+                android:textColor="@color/blue_dark"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl2"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:ems="8"
+                android:fontFamily="@font/sourcesanspro"
+                android:paddingTop="3dp"
+                android:text="Pohonné hmoty"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/showFuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:hint="0"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:paddingTop="3dp"
+                android:gravity="right"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp"
+                android:fontFamily="@font/sourcesanspro"
+                android:drawableRight="@drawable/ic_crown"
+                android:ems="5"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl3"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:ems="9"
+                android:fontFamily="@font/sourcesanspro"
+                android:paddingTop="3dp"
+                android:text="Předměty denní potřeby"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/showDaily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:hint="0"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:paddingTop="3dp"
+                android:gravity="right"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp"
+                android:fontFamily="@font/sourcesanspro"
+                android:drawableRight="@drawable/ic_crown"
+                android:ems="5"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl4"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:ems="8"
+                android:fontFamily="@font/sourcesanspro"
+                android:paddingTop="3dp"
+                android:text="Potraviny"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/showFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:hint="0"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:paddingTop="3dp"
+                android:gravity="right"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp"
+                android:fontFamily="@font/sourcesanspro"
+                android:drawableRight="@drawable/ic_crown"
+                android:ems="5"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl5"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:ems="8"
+                android:fontFamily="@font/sourcesanspro"
+                android:paddingTop="3dp"
+                android:text="Splátky úvěrů"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/showLoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:hint="0"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:paddingTop="3dp"
+                android:gravity="right"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp"
+                android:fontFamily="@font/sourcesanspro"
+                android:drawableRight="@drawable/ic_crown"
+                android:ems="5"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl6"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:ems="8"
+                android:fontFamily="@font/sourcesanspro"
+                android:paddingTop="3dp"
+                android:text="Zdravotní péče"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/showHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:hint="0"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:paddingTop="3dp"
+                android:gravity="right"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp"
+                android:fontFamily="@font/sourcesanspro"
+                android:drawableRight="@drawable/ic_crown"
+                android:ems="5"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl7"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:ems="8"
+                android:fontFamily="@font/sourcesanspro"
+                android:paddingTop="3dp"
+                android:text="Jiné nezbytné výdaje"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/showOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:hint="0"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:paddingTop="3dp"
+                android:gravity="right"
+                android:textColor="@color/blue_dark"
+                android:textSize="18dp"
+                android:fontFamily="@font/sourcesanspro"
+                android:drawableRight="@drawable/ic_crown"
+                android:ems="5"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/textReturnChart"
+            android:layout_below="@id/rl8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sourcesanspro"
+            android:text="Vrátit se zpět"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blue_dark"
+            android:textSize="18dp" />
+</RelativeLayout>

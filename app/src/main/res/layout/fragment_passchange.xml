@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensans"
+        android:text="ZMĚNA HESLA"
+        android:textColor="@color/blue_dark"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        app:hintEnabled="false"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/showUserEmail"
+            android:layout_width="351dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_no_edit"
+            android:ems="10"
+            android:fontFamily="@font/sourcesanspro"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="25dp"
+            android:text="user_email"
+            android:textColor="#2E3192"
+            android:textColorHint="@color/blue_dark"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textChangePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUserEmail"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Heslo"
+        android:textColorHint="@color/blue_dark"
+        android:theme="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+        app:errorTextColor="#FFE13023"
+        app:errorEnabled="false"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUserEmail"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/blue_dark">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassChange"
+            android:layout_width="351dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hint_shape_edit_text"
+            android:drawableStart="@drawable/ic_action_pass_set"
+            android:drawableLeft="@drawable/ic_action_pass_set"
+            android:fontFamily="@font/sourcesanspro"
+            android:inputType="textPassword"
+            android:paddingLeft="2sp"
+            android:paddingRight="20sp"
+            android:textColor="@color/blue_dark"
+            android:textColorHint="@color/blue_dark"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textChangeAcceptLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textChangePass"
+        android:layout_marginTop="0dp"
+        android:hint="Heslo znovu"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/blue_dark"
+        android:theme="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+        app:errorTextColor="#FFE13023"
+        app:errorEnabled="false"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textChangePass"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/blue_dark">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassChangeConfirm"
+            android:layout_width="351dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hint_shape_edit_text"
+            android:drawableStart="@drawable/ic_action_pass_set"
+            android:drawableLeft="@drawable/ic_action_pass_set"
+            android:ems="10"
+            android:fontFamily="@font/sourcesanspro"
+            android:inputType="textPassword"
+            android:textColor="@color/blue_dark"
+            android:textColorHint="@color/blue_dark"
+            android:textSize="18dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnChangePass"
+        android:layout_width="351dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textChangeAcceptLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/opensans"
+        android:text="ZMĚNIT HESLO"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="#2E3192" />
+
+</RelativeLayout>
